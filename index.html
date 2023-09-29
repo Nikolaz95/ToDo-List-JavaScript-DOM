@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/6a309e1749.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>To do List</h1>
+    </header>
+
+    <form id="new-form">
+      <input type="text" id="skriva-tekst" placeholder="Din syssla ..." />
+
+      <input
+        type="submit"
+        id="creat-new"
+        onclick="add_todoList(this);"
+        value="Add +"
+      />
+
+      <input
+        type="submit"
+        id="reset-all"
+        onclick="rem(this);"
+        value="Reset All"
+      />
+    </form>
+
+    <h2>To do</h2>
+
+    <div class="ullista"></div>
+    <!--   
+      <ul>
+        <li>
+          <div class="task">
+            <div class="kontent-ele">
+              <input class="text1" type="text" />
+
+              <span class="butons">
+                <button class="change">
+                  <i
+                    class="fa-solid fa-pen-to-square"
+                    style="color: #ff9500"
+                  ></i>
+                  change
+                </button>
+
+                <button class="finish">
+                  <i
+                    class="fa-solid fa-check-double"
+                    style="color: #00ff1e"
+                  ></i>
+                  finish
+                </button>
+
+                <button class="delete">
+                  <i class="fa-solid fa-trash-can" style="color: #d10000"></i>
+                  delete
+                </button>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div> -->
+
+    <h2>Finnish</h2>
+
+    <!-- <div class="finish-lista">
+      <ul>
+        <li>
+          <div class="task">
+            <div class="kontent-ele">
+              <input class="text1" type="text" />
+
+              <span class="butons">
+                <button class="change">
+                  <i
+                    class="fa-solid fa-pen-to-square"
+                    style="color: #ff9500"
+                  ></i>
+                  change
+                </button>
+
+                <button class="delete">
+                  <i class="fa-solid fa-trash-can" style="color: #d10000"></i>
+                  delete
+                </button>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div> -->
+
+    <ul id="finish"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
